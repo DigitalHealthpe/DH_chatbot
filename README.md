@@ -82,7 +82,7 @@ cd DH_chatbot
 Start the chatbot by running the following command from the project directory:
 
 ```bash
-streamlit run front.py --server.port 8501
+streamlit run main.py --server.port 8501
 ```
 
 This will launch the chatbot on `http://localhost:8501` by default. Open this URL in your browser to interact with the chatbot.
