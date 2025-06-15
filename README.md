@@ -8,16 +8,46 @@ This repository contains the code for the Mental Health Chatbot, designed to pro
 
 To use this chatbot, you need the following:
 
-- A system capable of running Python 3.8 or later.
-- At least **16GB of RAM** (32GB recommended for running Llama 3.1).
-- A **GPU** (optional but recommended for faster inference with large models).
-- A stable internet connection for pulling the Llama 3.1 model.
+| Component | Minimum | Recommended |
+|-----------|---------|-------------|
+| **Python** | 3.8 | Latest 3.x |
+| **RAM** | 16 GB | 32 GB |
+| **GPU** | Not required | CUDA-compatible for faster inference |
+| **Internet** | Needed to download the model |
+| **Ollama** | Latest version | – |
+| **Git** | Required only if you will `git clone` the repo | – |
+
 
 ---
 
 ## Installation Guide
 
-### Step 1: Install Ollama
+### Step 1: Verify Python & pip
+
+Ollama is required to manage and run the Llama 3.1 model. Download and install it from [Ollama's official website](https://ollama.ai/download).
+
+Once installed, verify it by running the following command in your terminal:
+
+```bash
+python --version
+pip --version
+```
+If either command is not recognized, download Python from [https://www.python.org/downloads/](https://www.python.org/downloads/) and be sure to check “Add Python to PATH.”
+
+---
+
+### Step 2: Verify Git
+
+
+```bash
+git --version
+```
+If Git is missing, install it from [https://git-scm.com/downloads]
+
+---
+
+
+### Step 3: Install Ollama
 
 Ollama is required to manage and run the Llama 3.1 model. Download and install it from [Ollama's official website](https://ollama.ai/download).
 
@@ -30,7 +60,7 @@ You should see a help menu or version output indicating Ollama is installed corr
 
 ---
 
-### Step 2: Pull the Llama 3.1 Model
+### Step 4: Pull the Llama 3.1 Model
 
 Use the following commands to pull and verify the Llama 3.1 model:
 
@@ -42,7 +72,7 @@ The `ollama list` command should display `llama3.1` as one of the available mode
 
 ---
 
-### Step 3: Install Python Dependencies
+### Step 5: Install Python Dependencies
 
 Run the following commands to install all necessary Python packages:
 
@@ -66,7 +96,7 @@ These dependencies include libraries for managing the AI model, building the cha
 
 ---
 
-### Step 4: Clone the GitHub Repository
+### Step 6: Clone the GitHub Repository
 
 Download the project code from the Digital Health repository:
 
@@ -77,7 +107,7 @@ cd DH_chatbot
 
 ---
 
-### Step 5: Run the Chatbot
+### Step 7: Run the Chatbot
 
 Start the chatbot by running the following command from the project directory:
 
